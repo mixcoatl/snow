@@ -1,0 +1,24 @@
+# GB Studio build and temporary files.
+build/
+build_cache/
+build-*.json
+cache/
+node_modules/
+out/
+
+*.bak
+*.gb
+*.gbc
+*.gbsproj.bak
+*.gbsres.bak
+*.icloud
+*.pocket
+*.sav
+*.web
+
+# Local user settings.
+user_settings.gbsres
+
+# OS garbage files.
+.DS_Store
+Thumbs.db

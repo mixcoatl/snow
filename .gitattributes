@@ -1,0 +1,10 @@
+# Text files use standard LF line-endings.
+*.gbsproj text eol=lf
+*.gbsres text eol=lf
+*.json text eol=lf
+
+# These assets are binary.
+*.png binary
+*.wav binary
+*.mod binary
+*.uge binary
