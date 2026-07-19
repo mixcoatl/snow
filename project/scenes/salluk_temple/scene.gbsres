@@ -1,0 +1,668 @@
+{
+  "_resourceType": "scene",
+  "id": "63b3a892-db7c-4d68-a8ef-be6b8e67df0c",
+  "_index": 1,
+  "name": "Salluk: Temple",
+  "backgroundId": "4cb60176-90eb-47bd-8906-2ec6e06bf6d7",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0068+0f4+002+0f8+006+0f!002+0f!002+0f!006+0f!006+0f!002+0f4+006+0f!006+0f!00c+0f!004+0f3+00c+0f!004+0f!006+0f2+006+0f!004+0f3+002+0f6+002+0f3+006+0f!002+0f!004+0f!002+0f!008+0f!002+0f!004+0f!002+0f!008+0f!002+0f!004+0f4+008+0f4+0034+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_2",
+  "x": 240,
+  "y": 30,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "0",
+              "vectorY": "1",
+              "__collapse": true,
+              "__label": "Store Player Position"
+            },
+            "id": "d9a2e9ab-7963-449e-9caf-438c5891ca94"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Player Facing Altar?",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "c2ce98ed-965e-448a-8ca4-329e3f379082",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "$variable[V1]$": {
+                      "type": "number",
+                      "value": 4
+                    },
+                    "$variable[V2]$": {
+                      "type": "number",
+                      "value": 6
+                    },
+                    "$variable[V3]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V4]$": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "a17ae047-c2d2-4f7b-9a05-894b41964689"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T0"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": true,
+                    "__disableElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "An altar."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "5936ad6c-df05-4b59-a759-2f3530313b37"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "08725b53-53f1-4652-b295-9d00e768dd40"
+                }
+              ]
+            },
+            "id": "19b2fdd7-0568-4dfa-b409-ea1bd4b28536"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Player Facing Braziers?",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "c2ce98ed-965e-448a-8ca4-329e3f379082",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "$variable[V1]$": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "$variable[V2]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V3]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V4]$": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "a4dcd88f-564c-4e47-a21e-29089556a9fc"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T0"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": true,
+                    "__disableElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "A stone brazier. Smells\nof burning fish oil."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "641c3fc1-2910-4ed4-8815-aeb02cf77216"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "c8b811cb-e8ec-4250-ac51-8f1974e2e1b1"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "c2ce98ed-965e-448a-8ca4-329e3f379082",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "$variable[V1]$": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "$variable[V2]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V3]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V4]$": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "7030d6ed-c625-4370-a7e1-aa009c78f3c5"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T0"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": true,
+                    "__disableElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "A stone brazier. Smells\nof burning fish oil."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "d7f9eb2c-0ca9-4d7d-ac7c-639b97bc8a1f"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "f08d2999-7998-44cb-b0b8-5d19689eed7c"
+                }
+              ]
+            },
+            "id": "9c243d6a-546d-422c-bbea-8f3a961c1c05"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Player Facing Bucket?",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "c2ce98ed-965e-448a-8ca4-329e3f379082",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 7
+                    },
+                    "$variable[V1]$": {
+                      "type": "number",
+                      "value": 6
+                    },
+                    "$variable[V2]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V3]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V4]$": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "ef4f77f4-9c65-47cc-a006-b48e7030e84a"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T0"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "An empty bucket, here."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "74ab05a9-ace4-4c94-b4b7-1853ee412242"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "aa4f0e08-44a7-4a6d-ae51-05b5a7752a58"
+                }
+              ]
+            },
+            "id": "213ce3e5-87da-4a76-a079-f65c550f659b"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Player Facing Crates?",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "c2ce98ed-965e-448a-8ca4-329e3f379082",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 3
+                    },
+                    "$variable[V1]$": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "$variable[V2]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V3]$": {
+                      "type": "number",
+                      "value": 4
+                    },
+                    "$variable[V4]$": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "__collapse": false
+                  },
+                  "id": "a549318c-26a0-4865-82ae-7cae6a7b0cc1"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T0"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": true,
+                    "__disableElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Dried herbs, linen\nfabric, and pine cones."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "15f969d3-73de-4226-bbfe-4f5b2c9aba70"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "a145f883-1268-4810-b652-f4ef400b8ada"
+                }
+              ]
+            },
+            "id": "8047ae36-02a1-418e-8daf-8d78bc25f09a"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Player Facing Table?",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "c2ce98ed-965e-448a-8ca4-329e3f379082",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 3
+                    },
+                    "$variable[V1]$": {
+                      "type": "number",
+                      "value": 6
+                    },
+                    "$variable[V2]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V3]$": {
+                      "type": "number",
+                      "value": 4
+                    },
+                    "$variable[V4]$": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "ded570b2-a617-4a19-9f50-22cf1d107836"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T0"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": true,
+                    "__disableElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "A corner workspace.  \nSmells of plant residue\nand incense."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "c3e249e9-d9ef-4d6e-8a9f-606167462e9e"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "500a19c5-3102-46ad-8ac3-fbd0428e4f48"
+                }
+              ]
+            },
+            "id": "08a316fa-b7b2-4943-85b9-faacff88031e"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Player Facing Writing Desk?",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "c2ce98ed-965e-448a-8ca4-329e3f379082",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 7
+                    },
+                    "$variable[V1]$": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "$variable[V2]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V3]$": {
+                      "type": "number",
+                      "value": 4
+                    },
+                    "$variable[V4]$": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "__collapse": false
+                  },
+                  "id": "699b3146-5afc-422e-b96f-e7e0aa7c4961"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T0"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false,
+                    "__disableElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "A neatly ordered desk.\nSmells of parchment and\npigment."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "cc082411-df95-4cfc-96a7-2e2468192629"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "fe367da1-12a5-4b93-8206-278f1fdd0972"
+                }
+              ]
+            },
+            "id": "b1845f5e-e418-4111-9145-a91fa5cb1ebd"
+          }
+        ]
+      },
+      "id": "60a47987-62c0-4f52-aa07-15a1f1676b2d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

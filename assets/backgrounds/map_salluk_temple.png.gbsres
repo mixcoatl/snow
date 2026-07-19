@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "4cb60176-90eb-47bd-8906-2ec6e06bf6d7",
+  "name": "map_salluk_temple",
+  "symbol": "bg_map_salluk_temple",
+  "tileColors": "",
+  "filename": "map_salluk_temple.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

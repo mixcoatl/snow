@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "77a2a593-2441-4c34-9ab1-a4167f476a6f",
+  "name": "Door North",
+  "prefabId": "",
+  "x": 5,
+  "y": 6,
+  "symbol": "trigger_1",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "12d8cf63-f7d1-49ea-a2da-546a03ebd2ba",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "direction": "",
+        "fadeSpeed": 1
+      },
+      "id": "80e6a80c-3586-4ca5-a161-3921b39858a5"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}
