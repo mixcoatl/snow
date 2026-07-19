@@ -1,0 +1,160 @@
+{
+  "_resourceType": "sprite",
+  "id": "89dc0bc7-9d4f-48fd-b16a-3559c494de01",
+  "name": "actor_flame",
+  "symbol": "sprite_actor_flame",
+  "states": [
+    {
+      "id": "f8a37b6d-f98f-4f89-b7f9-33c74e261452",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "3fba34ed-5491-4199-8777-4e6c650c66d2",
+          "frames": [
+            {
+              "id": "1e44f04c-e09d-49cd-8785-3cfdf600e206",
+              "tiles": [
+                {
+                  "id": "7222c2ba-3e0d-43b7-8f6f-1a0990effc35",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "06e83262-4508-423e-944a-e6a571b953dc",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            },
+            {
+              "id": "4b8e7dfa-a00d-4009-bcd7-a2bf03313be5",
+              "tiles": [
+                {
+                  "id": "28b1ca93-ebbe-4ad1-a2ea-831a5bf5a671",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": true,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                },
+                {
+                  "id": "5e3f0111-ae22-489a-b918-15ac3e733050",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": true,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f7f990c7-3edc-40cf-95fe-a86033cea2cb",
+          "frames": [
+            {
+              "id": "f56de2aa-5ec1-4fed-b15f-b68c7051b5b4",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "7aad5bb4-7204-4d62-928d-398142e4677f",
+          "frames": [
+            {
+              "id": "4d0c7587-dcb9-4dd5-9625-1493e2b9618f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "dbf1049f-31b4-48e5-8c1b-9ca985534d15",
+          "frames": [
+            {
+              "id": "7ee60073-dbff-4846-b44a-67af63a5a678",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a8ba4118-cab7-4e07-b3cb-b1ba6a99df9f",
+          "frames": [
+            {
+              "id": "13525d8b-5aa2-41be-af28-0b0974696eff",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a77bf4ab-5d56-45ef-b01a-36566bfce920",
+          "frames": [
+            {
+              "id": "e1813db7-71a7-4a16-9bfa-9cc6dcdc94e5",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "01ca4b7d-cc6d-4392-98d8-bf73ec955d0f",
+          "frames": [
+            {
+              "id": "78b38fad-3362-4334-b860-6fc2feb5b918",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "56aef346-42f7-4f8f-9b8e-323a87debb89",
+          "frames": [
+            {
+              "id": "f5aa5dd4-3282-42c0-b6a7-de07bce4cf48",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "actor_flame.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "005d993ef8597dfd90bcb8d42db59cf55253e60f"
+}

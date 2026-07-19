@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "aafd8e42-55b3-4837-8694-8bc56310827e",
+  "name": "Flame Right",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "89dc0bc7-9d4f-48fd-b16a-3559c494de01",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 7,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "ba753806-c5a0-43eb-b6a4-99685f2e3a4f"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 15,
+  "y": 11,
+  "_index": 1
+}
