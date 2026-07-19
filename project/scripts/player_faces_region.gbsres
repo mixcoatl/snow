@@ -1,0 +1,245 @@
+{
+  "_resourceType": "script",
+  "id": "c2ce98ed-965e-448a-8ca4-329e3f379082",
+  "name": "Player Faces Region?",
+  "description": "Sets a flag that indicates whether the player faces the specified region.  You must store the player's location into the Player X and Player Y variables before you call this script.",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "X",
+      "passByReference": false
+    },
+    "V1": {
+      "id": "V1",
+      "name": "Y",
+      "passByReference": false
+    },
+    "V2": {
+      "id": "V2",
+      "name": "W",
+      "passByReference": false
+    },
+    "V3": {
+      "id": "V3",
+      "name": "H",
+      "passByReference": false
+    },
+    "V4": {
+      "id": "V4",
+      "name": "Is Facing Region?",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_1",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "V4",
+        "value": {
+          "type": "false"
+        },
+        "__label": "Clear Flag? Parameter",
+        "__collapse": true
+      },
+      "id": "0f06d413-d887-4583-b2c5-6986c389da5a"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "expression",
+          "value": "$00$ >= $V0$ && $00$ < $V0$ + $V2$ && $01$ == $V1$ + $V3$"
+        },
+        "__collapseElse": true,
+        "__collapse": true,
+        "__disableElse": true,
+        "__label": "Player South + Player Facing Up?"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_ACTOR_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              },
+              "__collapseElse": true,
+              "__disableElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "V4",
+                    "value": {
+                      "type": "true"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "4dc2a8d2-05ee-4fa0-95b4-b48afd18f676"
+                }
+              ],
+              "false": []
+            },
+            "id": "ed0d8e01-fa01-4d13-b3a7-adb0e4b6d76b"
+          }
+        ],
+        "false": []
+      },
+      "id": "e33d88c6-11ea-418f-a57b-5540caa47933"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "expression",
+          "value": "$00$ >= $V0$ && $00$ < $V0$ + $V2$ && $01$ == $V1$ - 1"
+        },
+        "__collapseElse": true,
+        "__collapse": true,
+        "__disableElse": true,
+        "__label": "Player North + Player Facing Down?"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_ACTOR_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              },
+              "__collapseElse": true,
+              "__disableElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "V4",
+                    "value": {
+                      "type": "true"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "9d253846-0b13-4470-a600-2166828dd780"
+                }
+              ],
+              "false": []
+            },
+            "id": "fdff487e-5fb2-4533-a940-d5bd5aaa1aae"
+          }
+        ],
+        "false": []
+      },
+      "id": "f9e530d5-afe9-41ee-9d26-1458450e2144"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "expression",
+          "value": "$01$ >= $V1$ && $01$ < $V1$ + $V3$ && $00$ == $V0$ + $V2$"
+        },
+        "__collapseElse": true,
+        "__collapse": true,
+        "__disableElse": true,
+        "__label": "Player East + Player Facing Left?"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_ACTOR_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              },
+              "__collapseElse": true,
+              "__disableElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "V4",
+                    "value": {
+                      "type": "true"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "08420a70-265f-44e7-976a-830f0b662458"
+                }
+              ],
+              "false": []
+            },
+            "id": "a3ec760a-b51e-4a1c-9d26-a7f71e272cf4"
+          }
+        ],
+        "false": []
+      },
+      "id": "41046316-1427-4a9f-8ea0-c14bc6336790"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "expression",
+          "value": "$01$ >= $V1$ && $01$ < $V1$ + $V3$ && $00$ >= $V0$ - 2 && $00$ < $V0$"
+        },
+        "__collapseElse": true,
+        "__collapse": true,
+        "__disableElse": true,
+        "__label": "Player West + Player Facing Right?"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_ACTOR_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              },
+              "__collapseElse": true,
+              "__disableElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "V4",
+                    "value": {
+                      "type": "true"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "c301e163-57fe-4792-bbc2-d3c9ac16e707"
+                }
+              ],
+              "false": []
+            },
+            "id": "97684228-f654-4260-9302-12e9c99eaf36"
+          }
+        ],
+        "false": []
+      },
+      "id": "6acadf48-da12-48ea-9299-8e889ab6b50b"
+    }
+  ]
+}

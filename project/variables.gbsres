@@ -1,5 +1,16 @@
 {
   "_resourceType": "variables",
-  "variables": [],
+  "variables": [
+    {
+      "id": "0",
+      "name": "Player X",
+      "symbol": "var_player_x"
+    },
+    {
+      "id": "1",
+      "name": "Player Y",
+      "symbol": "var_player_y"
+    }
+  ],
   "constants": []
 }
