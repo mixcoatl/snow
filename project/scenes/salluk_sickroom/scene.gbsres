@@ -1,0 +1,405 @@
+{
+  "_resourceType": "scene",
+  "id": "12d8cf63-f7d1-49ea-a2da-546a03ebd2ba",
+  "_index": 0,
+  "name": "Salluk: Sickroom",
+  "backgroundId": "776de79a-c4be-430e-978b-907edb70b861",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "007d+0f5+00f+0f!003+0f!00f+0f!003+0f4+00c+0f!006+0f3+00a+0f!008+0f!00a+0f3+004+0f3+00c+0f!004+0f!00e+0f2+002+0f2+00f+0f4+0044+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_1",
+  "x": 60,
+  "y": 30,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "0",
+              "vectorY": "1",
+              "__collapse": true,
+              "__label": "Store Player Position"
+            },
+            "id": "b9489dcc-875e-4262-a9e4-1cf99c988e91"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Player Facing Barrel?",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "c2ce98ed-965e-448a-8ca4-329e3f379082",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "$variable[V1]$": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "$variable[V2]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V3]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V4]$": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "ff162a94-c50c-47ba-9d8d-fcdc71207056"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T0"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Fresh water."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "647c364f-cb07-4500-80ad-a5c9837e643d"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "bcca4c38-6c72-44b3-ae82-a08c9ab8855f"
+                }
+              ]
+            },
+            "id": "1799f76d-e490-4b5f-9039-24ccfdf1200a"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Player Facing Bookshelf?",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "c2ce98ed-965e-448a-8ca4-329e3f379082",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "$variable[V1]$": {
+                      "type": "number",
+                      "value": 6
+                    },
+                    "$variable[V2]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V3]$": {
+                      "type": "number",
+                      "value": 4
+                    },
+                    "$variable[V4]$": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "80fffb27-f05b-49fa-9929-c758879d01fa"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T0"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "A mortar and pestle\nand fresh linens."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "70b2ae8a-e7da-4cc8-954e-d96ddd2994a7"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "a4692b6c-6fa7-44a6-933c-70631410fce5"
+                }
+              ]
+            },
+            "id": "c0043b76-a8a1-4082-bcbe-6d3f92743d40"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Player Facing Bucket?",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "c2ce98ed-965e-448a-8ca4-329e3f379082",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 6
+                    },
+                    "$variable[V1]$": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "$variable[V2]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V3]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V4]$": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "6cf4ee8e-3ce3-455b-a1f7-483c97db6b07"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T0"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "A bucket making do as\na chamber pot. *Blargh!"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": false
+                        },
+                        "id": "29f27108-8baf-41ed-aa98-5b488357734a"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "546625a0-0299-4919-af00-042153dc08ca"
+                }
+              ]
+            },
+            "id": "96d3d52e-cb55-4110-9597-2eb3600c34d5"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Player Facing Desk?",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "c2ce98ed-965e-448a-8ca4-329e3f379082",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "$variable[V1]$": {
+                      "type": "number",
+                      "value": 7
+                    },
+                    "$variable[V2]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V3]$": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "$variable[V4]$": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "1cb21713-5d82-4bfc-8484-d1d47d0b1532"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "T0"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Plant residue? Smells\nof incense and medicinal\nherb."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "238a5b8b-1425-4ab1-902d-cc6afacaac4c"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "d310ae74-12a1-4021-aaf1-4346d5655974"
+                }
+              ]
+            },
+            "id": "aa99504d-3ac5-421f-ad4d-dfc73cb07a20"
+          }
+        ]
+      },
+      "id": "96c39cd3-d69d-43f2-977e-0d886658cdbf"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "autoFadeEventCollapse": true
+}

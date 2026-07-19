@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "776de79a-c4be-430e-978b-907edb70b861",
+  "name": "map_salluk_sickroom",
+  "symbol": "bg_map_salluk_sickroom",
+  "tileColors": "",
+  "filename": "map_salluk_sickroom.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}
